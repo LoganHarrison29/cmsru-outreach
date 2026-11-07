@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMSRU Outreach Alliance | Student-Run Community Health</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cooper: { 800: '#1e3a5f', 900: '#0f243e', accent: '#2b6cb0' },
+                        earth: { 50: '#fbfbf9', 100: '#f3f2ee', 200: '#e5e3da', 800: '#2c332d' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .heading-serif { font-family: 'Lora', serif; }
+        /* Hide default radio circle for schedule grid */
+        .date-radio:checked + label { background-color: #1e3a5f; color: white; border-color: #1e3a5f; }
+    </style>
+</head>
+<body class="bg-earth-50 text-gray-800 antialiased selection:bg-cooper-800 selection:text-white">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-earth-200 shadow-xs">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between py-3">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-md bg-cooper-800 text-white flex items-center justify-center font-bold text-base">OA</div>
+                <div>
+                    <span class="font-bold text-base tracking-tight text-cooper-900 block leading-tight">CMSRU Outreach Alliance</span>
+                    <span class="text-xs text-gray-500">Student-Run Community Health Programs</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
+                <a href="#initiatives" class="hover:text-cooper-800 transition">Programs</a>
+                <a href="#protocols" class="hover:text-cooper-800 transition">Protocols & Gear</a>
+                <a href="#signups" class="hover:text-cooper-800 transition">Shift Portal</a>
+                <a href="#leadership" class="hover:text-cooper-800 transition">Leadership</a>
+            </nav>
+            <a href="#signups" class="bg-cooper-800 hover:bg-cooper-900 text-white px-4 py-2 rounded-lg text-sm font-medium transition shadow-xs">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Core Programs & Mobile Unit Tracking -->
+    <section id="initiatives" class="py-16 bg-white border-b border-earth-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <h2 class="heading-serif text-3xl text-cooper-900 mb-8">Community Operations</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Mobile Health Unit with Tracking Display -->
+                <div class="md:col-span-2 bg-earth-50 rounded-xl p-7 border border-earth-200 shadow-xs">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-cooper-800 bg-earth-100 px-2.5 py-1 rounded">Clinical Unit</span>
+                    </div>
+                    <h3 class="heading-serif text-xl font-semibold text-cooper-900 mb-4">Mobile Blood Pressure Unit Progression</h3>
+                    <p class="text-sm text-gray-600 mb-6">Saturday morning deployment tracking for student clinicians and faculty preceptors.</p>
+                    
+                    <!-- Tracking Display -->
+                    <div class="relative border-l-2 border-cooper-800 ml-3 space-y-6 pb-2">
+                        <div class="relative pl-6">
+                            <div class="absolute w-3 h-3 bg-cooper-800 rounded-full -left-[7px] top-1"></div>
+                            <div class="font-semibold text-sm text-cooper-900">8:30 AM – 10:00 AM</div>
+                            <div class="text-xs text-gray-600">Seeds of Hope Ministry (1700 Broadway)</div>
+                        </div>
+                        <div class="relative pl-6">
+                            <div class="absolute w-3 h-3 bg-earth-200 rounded-full -left-[7px] top-1 border-2 border-white"></div>
+                            <div class="font-semibold text-sm text-cooper-900 text-gray-500">10:00 AM – 10:30 AM</div>
+                            <div class="text-xs text-gray-500">Transit & Equipment Reset</div>
+                        </div>
+                        <div class="relative pl-6">
+                            <div class="absolute w-3 h-3 bg-cooper-800 rounded-full -left-[7px] top-1"></div>
+                            <div class="font-semibold text-sm text-cooper-900">10:30 AM – 12:30 PM</div>
+                            <div class="text-xs text-gray-600">AGAPE (301 Atlantic Ave)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Camden Fishing Club (Unhoused Focus) -->
+                <div class="bg-earth-50 rounded-xl p-7 border border-earth-200 shadow-xs">
+                    <span class="text-xs font-bold uppercase tracking-wider text-cooper-800 bg-earth-100 px-2.5 py-1 rounded mb-4 inline-block">Recreation</span>
+                    <h3 class="heading-serif text-xl font-semibold text-cooper-900 mb-3">Camden Fishing Club</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                        A community-building initiative providing unhoused Camden residents with rods, tackle, and prepaid NJ fishing licenses. We focus on fostering dignity, quiet recreation, and peer support along the Cooper River banks rather than traditional clinical rounds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Orientation, Protocols & Checklists -->
+    <section id="protocols" class="py-16 bg-earth-50 border-b border-earth-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <h2 class="heading-serif text-3xl text-cooper-900 mb-8">Shift Protocols & Checklists</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Field Gear & Dress Code -->
+                <div class="bg-white p-6 rounded-xl border border-earth-200">
+                    <h4 class="font-bold text-cooper-900 mb-3">Field Gear & Dress Code</h4>
+                    <ul class="text-xs text-gray-600 space-y-2">
+                        <li class="flex items-start"><span class="text-cooper-800 mr-2">✓</span> Wear closed-toe, comfortable walking shoes.</li>
+                        <li class="flex items-start"><span class="text-cooper-800 mr-2">✓</span> Display your Cooper student ID visibly.</li>
+                        <li class="flex items-start"><span class="text-cooper-800 mr-2">✓</span> Dress in layers appropriate for prolonged outdoor weather.</li>
+                        <li class="flex items-start"><span class="text-cooper-800 mr-2">✓</span> Avoid wearing flashy jewelry or bringing large valuables.</li>
+                    </ul>
+                </div>
+
+                <!-- Pre-Flight Briefing Preview -->
+                <div class="bg-white p-6 rounded-xl border border-earth-200">
+                    <h4 class="font-bold text-cooper-900 mb-3">Pre-Flight Briefing Preview</h4>
+                    <p class="text-xs text-gray-600 mb-3"><em>You will receive this automated brief 24 hours prior to your shift:</em></p>
+                    <div class="p-3 bg-earth-50 rounded border border-earth-100 text-[11px] text-gray-600 leading-tight">
+                        "Parking is available on Atlantic Ave. Arrive 10 mins early for inventory count. If driving, ensure your trunk is empty to load hygiene kits. Review the street de-escalation guide before arrival."
+                    </div>
+                </div>
+
+                <!-- Pre-Flight Clinical Kit Checklist -->
+                <div class="bg-white p-6 rounded-xl border border-earth-200">
+                    <h4 class="font-bold text-cooper-900 mb-3">Mobile Unit Kit Checklist</h4>
+                    <ul class="text-xs text-gray-600 space-y-2">
+                        <li><input type="checkbox" class="mr-2"> Automated & Manual BP Cuffs (Adult/L/XL)</li>
+                        <li><input type="checkbox" class="mr-2"> Stethoscopes & Alcohol Prep Pads</li>
+                        <li><input type="checkbox" class="mr-2"> Cooper-Rowan Clinic Referral Slips</li>
+                        <li><input type="checkbox" class="mr-2"> Bilingual Patient Number Cards</li>
+                    </ul>
+                </div>
+
+                <!-- New Volunteer Orientation -->
+                <div class="bg-white p-6 rounded-xl border border-earth-200">
+                    <h4 class="font-bold text-cooper-900 mb-3">Street Etiquette Orientation</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Approach all community members at eye level. Always ask for consent before handing items or taking vitals. Use trauma-informed language and respect personal boundaries at staging zones.
+                    </p>
+                </div>
+
+                <!-- Student Leadership Structure -->
+                <div class="bg-white p-6 rounded-xl border border-earth-200">
+                    <h4 class="font-bold text-cooper-900 mb-3">Shift Leadership Structure</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Each Saturday operates with <strong>1 Driver</strong> (transports kits), <strong>1 Shift Leader</strong> (manages flow and vitals charting), and <strong>4 Volunteers</strong>. Escalate clinical anomalies directly to the attending Faculty Preceptor.
+                    </p>
+                </div>
+
+                <!-- Post-Shift Reflection -->
+                <div class="bg-white p-6 rounded-xl border border-earth-200">
+                    <h4 class="font-bold text-cooper-900 mb-3">Post-Shift Debrief</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        At 12:15 PM, teams gather to discuss: <em>What went well? Were there any challenging patient encounters? What supply shortages did we notice for next week?</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Schedule Grid & Signup Portal -->
+    <section id="signups" class="py-16 bg-white border-b border-earth-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="heading-serif text-3xl text-cooper-900 mb-2">Volunteer Portal</h2>
+            <p class="text-gray-600 text-sm mb-8">Select your date, claim an open role, and receive instant confirmation.</p>
+
+            <form id="signup-form" class="bg-earth-50 p-6 sm:p-8 rounded-xl border border-earth-200 shadow-xs">
+                
+                <!-- 1. Interactive Schedule Grid -->
+                <div class="mb-8">
+                    <label class="block text-sm font-bold text-cooper-900 mb-3">Select Upcoming Saturday Date</label>
+                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+                        <div class="relative">
+                            <input type="radio" name="shiftDate" id="d1" value="Nov 7" class="peer sr-only date-radio" required>
+                            <label for="d1" class="flex flex-col items-center p-3 border border-earth-200 rounded-lg cursor-pointer bg-white hover:bg-earth-100 transition text-sm">
+                                <span class="font-bold">Nov 7</span>
+                            </label>
+                        </div>
+                        <div class="relative">
+                            <input type="radio" name="shiftDate" id="d2" value="Nov 14" class="peer sr-only date-radio">
+                            <label for="d2" class="flex flex-col items-center p-3 border border-earth-200 rounded-lg cursor-pointer bg-white hover:bg-earth-100 transition text-sm">
+                                <span class="font-bold">Nov 14</span>
+                            </label>
+                        </div>
+                        <div class="relative">
+                            <input type="radio" name="shiftDate" id="d3" value="Nov 21" class="peer sr-only date-radio">
+                            <label for="d3" class="flex flex-col items-center p-3 border border-earth-200 rounded-lg cursor-pointer bg-white hover:bg-earth-100 transition text-sm">
+                                <span class="font-bold">Nov 21</span>
+                            </label>
+                        </div>
+                        <div class="relative">
+                            <input type="radio" name="shiftDate" id="d4" value="Dec 5" class="peer sr-only date-radio">
+                            <label for="d4" class="flex flex-col items-center p-3 border border-earth-200 rounded-lg cursor-pointer bg-white hover:bg-earth-100 transition text-sm">
+                                <span class="font-bold">Dec 5</span>
+                            </label>
+                        </div>
+                        <div class="relative">
+                            <input type="radio" name="shiftDate" id="d5" value="Dec 12" class="peer sr-only date-radio">
+                            <label for="d5" class="flex flex-col items-center p-3 border border-earth-200 rounded-lg cursor-pointer bg-white hover:bg-earth-100 transition text-sm">
+                                <span class="font-bold">Dec 12</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Role Slot Transparency -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-end mb-3">
+                        <label class="block text-sm font-bold text-cooper-900">Select Role (303 Atlantic Ave)</label>
+                        <span class="text-[10px] uppercase text-gray-500 font-bold tracking-wider">Live Availability</span>
+                    </div>
+                    <div class="space-y-3">
+                        <label class="flex items-center justify-between p-3 border border-earth-200 rounded-lg bg-white cursor-pointer hover:border-cooper-800 transition">
+                            <div class="flex items-center space-x-3">
+                                <input type="radio" name="shiftRole" value="Driver" class="text-cooper-800 focus:ring-cooper-800" required>
+                                <div>
+                                    <div class="font-semibold text-sm text-gray-800">Shift Driver</div>
+                                    <div class="text-xs text-gray-500">Requires vehicle to transport bins.</div>
+                                </div>
+                            </div>
+                            <div class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">0/1 Filled</div>
+                        </label>
+                        
+                        <label class="flex items-center justify-between p-3 border border-earth-200 rounded-lg bg-white cursor-pointer hover:border-cooper-800 transition">
+                            <div class="flex items-center space-x-3">
+                                <input type="radio" name="shiftRole" value="Leader" class="text-cooper-800 focus:ring-cooper-800">
+                                <div>
+                                    <div class="font-semibold text-sm text-gray-800">Shift Leader</div>
+                                    <div class="text-xs text-gray-500">Prior street outreach experience required.</div>
+                                </div>
+                            </div>
+                            <div class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">0/1 Filled</div>
+                        </label>
+
+                        <label class="flex items-center justify-between p-3 border border-earth-200 rounded-lg bg-gray-50 cursor-not-allowed opacity-75">
+                            <div class="flex items-center space-x-3">
+                                <input type="radio" name="shiftRole" value="Volunteer" disabled class="text-gray-400">
+                                <div>
+                                    <div class="font-semibold text-sm text-gray-800">Standard Volunteer</div>
+                                    <div class="text-xs text-gray-500">Distribution and engagement.</div>
+                                </div>
+                            </div>
+                            <div class="text-xs font-bold text-red-700 bg-red-50 px-2 py-1 rounded">4/4 Full</div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 3. Dynamic Waitlist Protocol Toggle -->
+                <div class="mb-6 p-4 border border-amber-200 bg-amber-50 rounded-lg">
+                    <label class="flex items-start space-x-3 cursor-pointer">
+                        <input type="checkbox" id="waitlist-toggle" class="mt-1 text-amber-600 focus:ring-amber-500">
+                        <div>
+                            <div class="font-semibold text-sm text-amber-900">Join Standby Waitlist</div>
+                            <div class="text-xs text-amber-800 mt-1">If the Volunteer role is full, check this box to be automatically emailed if a spot opens up before Saturday.</div>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- User Info -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="v-name" required class="w-full text-sm px-3 py-2 rounded border border-earth-200 focus:outline-none focus:border-cooper-800">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">Student Email</label>
+                        <input type="email" id="v-email" required class="w-full text-sm px-3 py-2 rounded border border-earth-200 focus:outline-none focus:border-cooper-800">
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-cooper-800 hover:bg-cooper-900 text-white font-medium py-3 rounded-lg transition shadow-xs">
+                    Confirm Registration
+                </button>
+            </form>
+
+            <!-- Success Actions -->
+            <div id="success-panel" class="hidden mt-6 bg-green-50 border border-green-200 p-6 rounded-xl text-center">
+                <div class="w-12 h-12 bg-green-100 text-green-700 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-xl">✓</div>
+                <h3 class="font-bold text-green-900 mb-2">Shift Confirmed</h3>
+                <p class="text-sm text-green-800 mb-4" id="success-msg">An instant email confirmation has been dispatched to your inbox.</p>
+                <button onclick="downloadICS()" class="bg-white border border-green-300 text-green-800 hover:bg-green-100 text-sm font-semibold px-4 py-2 rounded-lg transition shadow-sm">
+                    Add to Calendar (.ics)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Directory -->
+    <section id="leadership" class="py-16 bg-earth-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10">
+                <h2 class="heading-serif text-3xl text-cooper-900 mb-2">Leadership & Coordination</h2>
+                <p class="text-gray-600 text-sm max-w-2xl mx-auto">Operating under the CMSRU Student Government Association and guided by Cooper University Health Care faculty.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Executive Board -->
+                <div class="bg-white p-6 rounded-xl border border-earth-200 shadow-sm">
+                    <h3 class="font-bold text-cooper-900 border-b border-earth-200 pb-2 mb-4 text-sm uppercase tracking-wider">Outreach Board</h3>
+                    <ul class="text-sm space-y-3">
+                        <li class="flex flex-col sm:flex-row sm:justify-between"><span class="font-medium text-gray-800">Logan Harrison</span> <span class="text-gray-500 text-xs mt-0.5 sm:mt-0">Leadership</span></li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between"><span class="font-medium text-gray-800">Kenyon Graham</span> <span class="text-gray-500 text-xs mt-0.5 sm:mt-0">Leadership</span></li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between"><span class="font-medium text-gray-800">Raaha Kumaresan</span> <span class="text-gray-500 text-xs mt-0.5 sm:mt-0">Leadership</span></li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between"><span class="font-medium text-gray-800">Nina Caprice</span> <span class="text-gray-500 text-xs mt-0.5 sm:mt-0">Leadership</span></li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Unit Coordinators -->
+                <div class="bg-white p-6 rounded-xl border border-earth-200 shadow-sm">
+                    <h3 class="font-bold text-cooper-900 border-b border-earth-200 pb-2 mb-4 text-sm uppercase tracking-wider">Mobile Unit Coordinators</h3>
+                    <ul class="text-sm space-y-3">
+                        <li class="flex flex-col sm:flex-row sm:justify-between"><span class="font-medium text-gray-800">Brooke Diederich</span> <span class="text-gray-500 text-xs mt-0.5 sm:mt-0">Coordinator</span></li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between"><span class="font-medium text-gray-800">Matt Bird</span> <span class="text-gray-500 text-xs mt-0.5 sm:mt-0">Coordinator</span></li>
+                    </ul>
+                </div>
+
+                <!-- Faculty Advisors -->
+                <div class="bg-white p-6 rounded-xl border border-earth-200 shadow-sm">
+                    <h3 class="font-bold text-cooper-900 border-b border-earth-200 pb-2 mb-4 text-sm uppercase tracking-wider">Faculty Preceptors</h3>
+                    <ul class="text-sm space-y-3">
+                        <li class="flex flex-col sm:flex-row sm:justify-between"><span class="font-medium text-gray-800">Dr. Emily Tixier, MD</span> <span class="text-gray-500 text-xs mt-0.5 sm:mt-0">Medical Director</span></li>
+                        <li class="flex flex-col sm:flex-row sm:justify-between"><span class="font-medium text-gray-800">Dr. Matthew Salzman, MD</span> <span class="text-gray-500 text-xs mt-0.5 sm:mt-0">Faculty Advisor</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cooper-900 text-gray-400 py-8 text-xs text-center border-t border-cooper-800">
+        <p>&copy; 2026 CMSRU Outreach Alliance &bull; Camden, NJ.</p>
+    </footer>
+
+    <!-- Interactivity Script -->
+    <script>
+        let registeredDate = "";
+        let registeredRole = "";
+
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('v-name').value;
+            const email = document.getElementById('v-email').value;
+            registeredDate = document.querySelector('input[name="shiftDate"]:checked').value;
+            const roleInput = document.querySelector('input[name="shiftRole"]:checked');
+            const isWaitlist = document.getElementById('waitlist-toggle').checked;
+            
+            registeredRole = roleInput ? roleInput.value : (isWaitlist ? "Waitlisted Volunteer" : "");
+            document.getElementById('signup-form').style.display = 'none';
+            
+            const panel = document.getElementById('success-panel');
+            panel.classList.remove('hidden');
+
+            if (isWaitlist && !roleInput) {
+                document.getElementById('success-msg').innerText = `You have been added to the Waitlist for ${registeredDate}. An instant alert has been dispatched to ${email}.`;
+            } else {
+                document.getElementById('success-msg').innerText = `Your role as ${registeredRole} on ${registeredDate} is confirmed. An instant confirmation brief has been dispatched to ${email}.`;
+            }
+        });
+
+        function downloadICS() {
+            const dateMap = {
+                "Nov 7": "20261107",
+                "Nov 14": "20261114",
+                "Nov 21": "20261121",
+                "Dec 5": "20261205",
+                "Dec 12": "20261212"
+            };
+            const icsDate = dateMap[registeredDate] || "20261107";
+            const icsContent = `BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:${icsDate}T100000\nDTEND:${icsDate}T120000\nSUMMARY:CMSRU Outreach Shift - ${registeredRole}\nLOCATION:303 Atlantic Ave, Camden, NJ\nDESCRIPTION:Weekly student-run community health outreach. Dress in layers and wear your Cooper ID.\nEND:VEVENT\nEND:VCALENDAR`;
+            const blob = new Blob([icsContent], { type: 'text/calendar' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `CMSRU_Outreach_${registeredDate.replace(' ', '_')}.ics`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+</html>
